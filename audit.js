@@ -13,7 +13,7 @@ $(document).ready(function () {
 			      }
 			      break;
 			    case 'commit':
-						$('#commit').append("<a href='https://github.com/encrypt-to/encrypt.to/commit/" + data.lastCommit.sha + "'>" + "Last commit from " + data.lastCommit.commit.author.date + ", " + data.lastCommit.commit.message + "</a>");	
+						$('#commit').append("<a href='https://github.com/hackenproof/report_encryption/commit/" + data.lastCommit.sha + "'>" + "Last commit from " + data.lastCommit.commit.author.date + ", " + data.lastCommit.commit.message + "</a>");	
 			      break;
 					case 'done':
 						$('#running').text("Test finished.");
