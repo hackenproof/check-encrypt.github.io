@@ -1,10 +1,10 @@
-# Audit Security Tool for Encrypt.to
+# Audit Security Tool for HackenProof
 
-The script compares js files from github and the deployed version at Encrypt.to.
+The script compares js files from github and the deployed version at CDN jsdelivr.
 
 ### Start audit
 
-Start audit javascript files: [http://encrypt-to.github.io](http://encrypt-to.github.io "http://encrypt-to.github.io")
+Start audit javascript files: [https://hackenproof.github.io/check-encrypt.github.io/](https://hackenproof.github.io/check-encrypt.github.io/)
 
 ### MIT License
 
