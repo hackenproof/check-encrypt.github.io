@@ -1,9 +1,9 @@
 function startAudit() {
 	// load js file list
-	var fileLoader = new ObjLoader("https://api.github.com/repos/encrypt-to/encrypt.to/contents/public/assets");
+	var fileLoader = new ObjLoader("https://api.github.com/repos/hackenproof/report_encryption/contents");
 
 	// load commits
-	var commitLoader = new ObjLoader("https://api.github.com/repos/encrypt-to/encrypt.to/commits");
+	var commitLoader = new ObjLoader("https://api.github.com/repos/hackenproof/report_encryption/commits");
 	var lastCommit = commitLoader.objects[0];	
 	
 	if (lastCommit) {
@@ -20,8 +20,8 @@ function startAudit() {
 		if (name.indexOf(".js") !== -1) {
 
 			// build links
-			var deployedLink = 'https://encrypt.to/assets/' + name;
-			var githubLink = 'https://api.github.com/repos/encrypt-to/encrypt.to/contents/public/assets/' + name;
+			var deployedLink = 'https://cdn.jsdelivr.net/gh/hackenproof/report_encryption/' + name;
+			var githubLink = 'https://api.github.com/repos/hackenproof/report_encryption/contents/' + name;
 		
 			// load files
 			var deployed = new Audit(deployedLink, false);
